@@ -22,7 +22,7 @@ method="post">
  <th>:</th>
  <td>
  <input type="text" name="kode" id="kode">
- <div><?= form_error('kode'); ?></div>
+ <div style="color: red;"><?= form_error('kode'); ?></div>
 </td>
 </tr>
 <tr>
@@ -30,7 +30,7 @@ method="post">
     <td>:</td>
     <td>
         <input type="text" name="nama" id="nama">
-        <div><?= form_error('nama'); ?></div>
+        <div style="color: red;"><?= form_error('nama'); ?></div>
  </td>
  </tr>
  <tr>
