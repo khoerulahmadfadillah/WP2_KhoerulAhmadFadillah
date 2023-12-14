@@ -9,12 +9,9 @@
  <title>Gagal Aktifasi Akun </title>
  <!-- Custom fonts for this template-->
  <link href="<?= base_url('assets/'); ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
- <link
-href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,30
-0i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+ <linkhref="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
  <!-- Custom styles for this template-->
- <link href="<?= base_url('assets/'); ?>css/sb-admin-2.min.css"
-rel="stylesheet">
+ <link href="<?= base_url('assets/'); ?>css/sb-admin-2.min.css"rel="stylesheet">
 </head>
 <body id="page-top">
  <!-- Page Wrapper -->
@@ -28,8 +25,7 @@ rel="stylesheet">
  <!-- 404 Error Text -->
  <div class="text-center">
  <?= $this->session->flashdata('pesan'); ?>
- <a href="<?= base_url('autentifikasi'); ?>"
-class="btn btn-secondar y ">&larr; Close </a>
+ <a href="<?= base_url('autentifikasi'); ?>"class="btn btn-secondar y ">&larr; Close </a>
  </div>
  </div>
  <!-- /.contai n er-fluid -->
@@ -40,8 +36,7 @@ class="btn btn-secondar y ">&larr; Close </a>
  </div>
  <!--End of Page Wrap per -->
  <!--Scroll to Top Button -->
- <a class="scroll-to-top rounded" href="#page-top"><i
-class="fas fa-angle-up"></i></a>
+ <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
 <!-- Bootstrap core JavaScript -->
 <script src="<?= base_url('assets/'); 
 ?>vendor/jquery/jquery.min .js"></script>

@@ -34,10 +34,7 @@ public function ubahProfil()
 {
 $data['judul'] = 'Ubah Profil';
 $data['user'] = $this->ModelUser->cekData(['email' => $this->session->userdata('email')])->row_array();
-$this->form_validation->set_rules('nama', 'Nama Lengkap', 
-'required|trim', [
-'required' => 'Nama tidak Boleh Kosong'
-]);
+$this->form_validation->set_rules('nama', 'Nama Lengkap', 'required|trim', ['required' => 'Nama tidak Boleh Kosong']);
 if ($this->form_validation->run() == false) {
     $this->load->view('templates/header', $data);
     $this->load->view('templates/sidebar', $data);
@@ -60,8 +57,7 @@ if ($this->form_validation->run() == false) {
     if ($this->upload->do_upload('image')) {
     $gambar_lama = $data['user']['image'];
     if ($gambar_lama != 'default.jpg') {
-    unlink(FCPATH . 'assets/img/profile/' . 
-   $gambar_lama);
+    unlink(FCPATH . 'assets/img/profile/' . $gambar_lama);
     }
     $gambar_baru = $this->upload->data('file_name');
     $this->db->set('image', $gambar_baru);
@@ -70,10 +66,7 @@ if ($this->form_validation->run() == false) {
     $this->db->set('nama', $nama);
     $this->db->where('email', $email);
     $this->db->update('user');
-    $this->session->set_flashdata('pesan', '<div 
-   class="alert alert-success alert-message" role="alert">Profil 
-   Berhasil diubah </div>');
-   redirect('user');
+    $this->session->set_flashdata('pesan', '<div class="alert alert-success alert-message" role="alert">Profil Berhasil diubah </div>');redirect('user');
  }
  }
 }
